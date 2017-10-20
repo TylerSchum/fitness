@@ -5,79 +5,96 @@ body {
 	background-color: #FFFF99;
 }
 
-/* Stle for container ID centers the page and sets the element width */
+/* Style to create a fluid image */
+img {
+	max-width: 100%;
+}
+/* Styles for mobile layout */
+
+/* Style for container ID centers the page and sets the element width */
 #container {
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/* style for header specifies top and bottom margins, background color, rounded border, shadow, and alignment */
+/* style for header specifies top margin, background color, rounded border, and alignment */
 header {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 0.2em;
 	background-color: #FFFFFF;
-	border-radius: 100px;
-	box-shadow: 
-		12px 0 12px #404040,
-		-12px 0 12px #404040,
-		0 -12px 12px #404040,
-		0 12px 12px #404040;
+	border-radius: 0.5em;
 	text-align: center;
 }
 
-/* style for nav specifies font type, size, boldness, and alignment, and margin and border */
+/* style for nav specifies text properties */
 nav {
 	font-family: Georgia, "Times New Roman", serif;
 	font-size: 1.25em;
 	font-weight: bold;
 	text-align: center;
-	padding: 15px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 20px;
-	border-top: 5px solid #FFFFFF;
-	border-bottom: 5px solid #FFFFFF;
 }
 
-/* style for main specifies block display, text properties, margins, padding, rounded border, and shadow */
+/* Style specifies padding and margins for the unordered list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+nav li {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	background-color: #009933;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	background-color: #009933;
+	border-radius: 2em;
+}
+
+/* Style displays the mobile class */
+.mobile {
+	display: inline;
+}
+
+/* Style hides the desktop class */
+.desktop {
+	display: none;
+}
+
+/* style for main specifies block display, text properties, margins, padding, rounded border, and border properties */
 main {
 	display: block;
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 1em;
-	margin-top: 20px;
-	padding: 20px;
-	border-radius: 50px;
+	margin-top: 0.5em;
+	padding: 1em;
+	border-radius: 1em;
 	background-color: #FFFFFF;
-	box-shadow: 
-		12px 0 12px #404040,
-		-12px 0 12px #404040,
-		0 -12px 12px #404040,
-		0 12px 12px #404040;
+	border-top: solid 0.2em #009933;
+	border-bottom: solid 0.2em #009933;
 }
 
 /* style for footer specifies font size, text alignment, and top margin */
 footer {
 	font-size: 0.70em;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 2em;
 }
+
+/* Styles hides tablet class */
+.tablet {
+	display: none;
+}
+
+/* Style rule specifies to not display equip class */
 
 .equip {
-	float: left;
-	padding-right: 30px;
-}
-
-ul {
-	margin-bottom: 50px;
-	list-style-position: inside;
-}
-
-
-dt {
-	font-weight: bold;
-}
-
-dd {
-	padding-bottom: 20px;
+	display: none;
 }

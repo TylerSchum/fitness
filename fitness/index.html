@@ -4,6 +4,7 @@
 <head> <!--Meta information-->
 	<title>Forward Fitness Club</title> <!--Tab name-->
 	<meta charset="utf-8"> <!--Most recent unicode character set-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="CSS/styles.css">
 </head>
 	
@@ -11,23 +12,40 @@
 	<div id="container">
 		<!--Use the header area for website name or logo-->
 		<header>
-			<a href="index.html"><img src="images/ffc_logo.png" alt="Forward Fitness Club logo" height="275" width="845" /></a>
+			<a href="index.html"><img src="images/ffc_logo.png" alt="Forward Fitness Club logo" /></a>
 		</header>
 		
 		<!--Use nav area for hyperlinks to other pages in the website-->
 		<nav>
-			<a class="navi" href="index.html">Home</a> &nbsp; &nbsp;
-			<a class="navi" href="about.html">About Us</a> &nbsp; &nbsp;
-			<a class="navi" href="class.html">Classes</a> &nbsp; &nbsp;
-			<a class="navi" href="nutrition.html">Nutrition</a> &nbsp; &nbsp;
-			<a class="navi" href="contact.html">Contact Us</a>
+			<ul>
+				<a class="navi" href="index.html"><li>Home</li></a>
+				<a class="navi" href="about.html"><li>About Us</li></a>
+				<a class="navi" href="class.html"><li>Classes</li></a>
+				<a class="navi" href="nutrition.html"><li>Nutrition</li></a>
+				<a class="navi" href="contact.html"><li>Contact Us</li></a>
+			</ul>
 		</nav>
 		
 		<!--Use main for the content of the page-->
 		<main>
 			<p>Welcome to Forward Fitness Club. Our mission is to help our clients meet their fitness and nutrition goals.</p>
-			<p>If you have struggled with getting healthy and need the motivation and resources to make a healthy lifestyle change, contact us today. Our facility includes state-of-the-art equipment, convenient group training classes, and nutrition tips and information to keep you healthy.</p>
-			<p>We provide a FREE, one-week membership to experience the benefits of our equipment and facility. This one-week trial gives you complete access to our equipment, training classes, and nutrition planning. Contact us today to start your free trial!</p>
+			
+			<div class="mobile">
+				<h3>FREE One-Week Trial Membership!</h3>
+				<p><a href="tel:+18145559608">Call Us Today to Get Started</a></p>
+				<h4>Fitness Club Hours:</h4>
+				<p>Monday - Thursday: 6:00am - 6:00pm<br />
+				Friday: 6:00am - 4:00pm<br />
+				Saturday: 8:00pm - 6:00pm<br/>
+				Sunday: Closed</p>
+			</div> <!-- ends mobile class -->
+			
+			<div class="desktop">
+				
+				<p>If you have struggled with getting healthy and need the motivation and resources to make a healthy lifestyle change, contact us today. Our facility includes state-of-the-art equipment, convenient group training classes, and nutrition tips and information to keep you healthy.</p>
+				<p>We provide a FREE, one-week membership to experience the benefits of our equipment and facility. This one-week trial gives you complete access to our equipment, training classes, and nutrition planning. Contact us today to start your free trial!</p>
+				
+			</div> <!-- End desktop class -->
 		</main>
 		
 		<!--Use footer to add footer content-->
