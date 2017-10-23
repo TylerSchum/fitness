@@ -218,5 +218,14 @@ footer {
 	.items {
 		margin-bottom: 8em;
 	}
+	
+	/* Style specifies a gradient for the body element */
+	body {
+		background: -moz-linear-gradient(#FFFFFF, #FFFF99); /*Firefox*/
+		background: -o-linear-gradient(#FFFFFF. #FFFF99); /*Opera*/
+		background: -webkit-linear-gradient(#FFFFFF, #FFFF99); /*Chrome and Safari */
+		background: linear-gradient(#FFFFFF, #FFFF99);
+		background-attachment: fixed;
+	}
 }
 /*-------------------End desktop media query-------------------------------------------*/
