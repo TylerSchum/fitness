@@ -43,7 +43,6 @@ nav ul {
 
 nav li {
 	text-decoration: none;
-	color: rgb(255, 255, 255);
 	background-color: #009933;
 	border-radius: 2em;
 	list-style-type: none;
@@ -94,7 +93,130 @@ footer {
 }
 
 /* Style rule specifies to not display equip class */
-
 .equip {
 	display: none;
 }
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px */
+/*-----------------------------------------------------------------------------------*/
+@media only screen and (min-width: 660px) {
+	/* style specifies a horizontal display for nav list */
+	nav li {
+		display: inline;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 18%;
+		white-space: nowrap;
+	}
+	
+	/* style specifies clear and top margin properties for the main element */
+	main {
+		clear: left;
+		margin-top: 4em;
+	}
+	
+	/* style specifies to hide the mobile class */
+	.mobile {
+		display: none;
+	}
+	
+	/* style specifies to display the desktop class */
+	.desktop {
+		display: inline;
+	}
+	
+	/* Style specifies a display. float, and padding for the equip class */
+	.equip {
+		display: inline;
+		float: left;
+		margin-right: 1.5em;
+	}
+	
+	/* Style specifies a display, list-style and bottom margin for the items class */
+	.items {
+		display: block;
+		list-style-position: inside;
+		margin-bottom: 5em;
+	}
+	
+	/* Style specifies to display the tablet class */
+	.tablet {
+		display: block;
+	}
+	
+	/* Style specifies a font weight and top margin for description list terms */
+	dt {
+		font-weight: bold;
+		margin-top: .7em;
+	}
+}
+/*------------------End tablet media query-------------------------------------------*/
+
+
+/*Media query for desktop viewport targets screens with a minimum width of 830px */
+/*-----------------------------------------------------------------------------------*/
+@media only screen and (min-width: 830px) {
+	/* Style specifies a width for container */
+	#container {
+		width: 80%;
+	}
+		
+	/* Style specifies margin and padding for the unordered list within the nav */
+	nav ul {
+		margin: 0;
+		padding-left: 0.5%;
+		padding-right: 0.5%;
+	}
+	
+	/* Style for navigation links specifies display and padding */	
+	nav li {
+		border-radius: 0;
+		border-top: solid #000000;
+		border-bottom: solid #000000;
+		margin-left: 0;
+		margin-right: 0;
+		padding: .7em 0;
+		width: 20%;
+	}
+	
+	/*style rules for pseudo classes */
+	.navi:link {
+		color: #FFFFFF;
+	}
+	
+	.navi:visited {
+		color: #FFFF99;
+	}
+	
+	.navi:hover {
+		color: #FFFF00;
+		font-style: italic;
+	}
+	
+	.navi:active {
+		color: #6600CC;
+	}
+	
+		
+	main {
+		border-style: none;
+		box-shadow: .5em .5em .5em #404040;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+	
+	/* Style specifies left and right padding for paragraph elements within the main element */
+	main p {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	
+	/* Style specifies the bottom margin for the items class */
+	.items {
+		margin-bottom: 8em;
+	}
+}
+/*-------------------End desktop media query-------------------------------------------*/
