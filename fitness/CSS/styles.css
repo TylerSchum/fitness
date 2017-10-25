@@ -93,6 +93,7 @@ footer {
 	text-align: center;
 	margin-top: 2em;
 	color: #fff;
+	clear: both;
 }
 
 /* Style for anchors within the footer */
@@ -109,6 +110,11 @@ footer a {
 /* Style rule specifies to not display equip class */
 .equip {
 	display: none;
+}
+
+/* Style for aside element */
+aside {
+	font-style: italic;
 }
 
 /* Media query for tablet viewport targets screen size with a minimum width of 660px */
@@ -133,6 +139,7 @@ footer a {
 		clear: left;
 		margin-top: -0.3em;
 		border-radius: 0;
+		overflow: auto;
 	}
 	
 	/* style specifies to hide the mobile class */
@@ -218,6 +225,45 @@ footer a {
 		padding: 0;
 		color: #1d1d1c;
 		text-decoration: underline;
+	}
+	
+	/* style for article element */
+	article {
+		background-color: #c1d9ca;
+		float: left;
+		margin: 0.5%;
+		padding: 0.5%;
+		text-align: center;
+		width: 31%;
+	}
+	
+	/* style for image element within the main article element */
+	main article img {
+		border: solid .1em #1d1d1c;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/* style for paragraph element contained within the main article element */
+	main article p {
+		color: #000;
+		margin-top: 2%;
+		padding: 1%;
+		text-align: left;
+	}
+	
+	/* style for unordered list element contained within the main article element */
+	main article ul {
+		text-align: left;
+	}
+	
+	/* style for aside elements */
+	aside {
+		background-color: #fff;
+		border-radius: 0 5em 5em 5em;
+		box-shadow: 1em 1em 1em #4c4f4d;
+		padding: 1.5em;
+		margin: 1em;
 	}
 }
 /*------------------End tablet media query-------------------------------------------*/
@@ -351,6 +397,11 @@ footer a {
 	/* style for contact class */
 	.contact {
 		color: #fff;
+	}
+		
+	/* style for h2 elements within the article element */
+	main article h2 {
+		color: #000;
 	}
 }
 /*-------------------End desktop media query-------------------------------------------*/
