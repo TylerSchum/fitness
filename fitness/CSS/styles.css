@@ -136,11 +136,43 @@ form ul {
 /* Style rule for chkbx class */
 .chkbx {
 	display: inline-block;
+}	
+	
+/* Style for video class */
+.video {
+	padding: 1em;
+	text-align: center;
+}
+
+/* style rule for video element */
+video {
+	border: .5em ridge #fff;
+	height: auto;
+	max-width: 100%;
+}
+	
+/* Style rule for the copyright div */
+#copyright {
+	float: left;
+	margin-top: 2em;
+	width: 80%;
+}
+
+/* Style rule for the social div */
+#social {
+	float: right;
+	width: 20%;
+}
+
+/* Style rule for social media icons */
+#social img {
+	padding: 0.5em;
 }
 
 /* Media query for tablet viewport targets screen size with a minimum width of 660px */
 /*-----------------------------------------------------------------------------------*/
 @media only screen and (min-width: 660px) {
+
 	/* style specifies a horizontal display for nav list */
 	nav li {
 		display: inline;
@@ -373,8 +405,6 @@ form ul {
 		text-shadow: 0.2em 0.1em #3D3D35;
 	}
 	
-	
-	
 	/*style rules for pseudo classes */
 	.navi:link {
 		color: #FFFFFF;
@@ -432,6 +462,7 @@ form ul {
 		background-color: #2a2a2a;
 		margin-top: -0.2em;
 		padding: 2em;
+		overflow: auto;
 	}
 	
 	/* Style specifies color and left-margin for the section element */
